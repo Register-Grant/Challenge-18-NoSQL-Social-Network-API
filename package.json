@@ -1,20 +1,26 @@
 {
-    "name": "challenge-18-nosql-social-network-api",
-    "version": "1.0.1",
-    "description": "MongoDB - build an API for a social network web application where users can share their thoughts, react to friend thoughts, and create a friend list.",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-      "start": "node index",
-      "dev": "nodemon index",
-      "seed": "node utils/seed",
-      "heroku-postbuild": "node utils/seed.js"
-    },
-    "dependencies": {
-      "express": "^4.17.1",
-      "mongoose": "^6.0.13"
-    },
-    "devDependencies": {
-      "nodemon": "^2.0.9"
-    }
-  }
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2",
+    "npm": "^8.13.2"
+  },
+  "name": "challenge-18-nosql-social-network-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/Register-Grant/Challenge-18-NoSQL-Social-Network-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/Register-Grant/Challenge-18-NoSQL-Social-Network-API/issues"
+  },
+  "homepage": "https://https://github.com/Register-Grant/Challenge-18-NoSQL-Social-Network-API#readme",
+  "description": ""
+}
