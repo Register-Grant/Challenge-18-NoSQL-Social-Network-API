@@ -1,6 +1,6 @@
 const { User } = require("../models");
 
-const userController = {
+const controlYourUsers = {
   getAllUser(req, res) {
     User.find({})
       .populate({
@@ -57,7 +57,6 @@ const userController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  // delete User Delete  localhost:3001/api/Users/<user-id-here>
   deleteUser({ params }, res) {
     User.findOneAndDelete({ _id: params.id })
       .then((dbUserData) => {
@@ -70,7 +69,6 @@ const userController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  //***------ user/friends----------------------
   addFriend({ params }, res) {
     User.findOneAndUpdate(
       { _id: params.id },
@@ -105,4 +103,4 @@ const userController = {
 
 };
 
-module.exports = userController;
+module.exports = controlYourUsers;
